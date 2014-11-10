@@ -1,0 +1,20 @@
+name: Volcanic Nutrition Plugin
+version: 1.02
+main: busairo.volcanicnutrition.VolcanicNutrition
+
+commands:
+    volcanicnutrition:
+      description: Describes the volcanic nutrition plugin 
+      command: /volcanicnutrition
+    getpotentdirtblock:
+      description: For testing purposes, gives player a made dirt block
+      command: /getpotentdirtblock
+    getpowercarrot:
+      description: For testing purposes, gives player the power carrot
+      command: /getpowercarrot
+    getpowerpotatoe:
+      description: For testing purposes, gives player the power potatoe
+      command: /getpowerpotatoe
+    getpowermelon:
+      description: For testing purposes, gives player the power melon
+      command: /getpowermelon
