@@ -1,0 +1,8 @@
+package items;
+
+import net.minecraft.item.Item;
+
+public class VolcanicFood extends Item 
+{
+	private String name = "power carrot";
+}

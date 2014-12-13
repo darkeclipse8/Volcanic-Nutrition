@@ -1,0 +1,13 @@
+package blocks;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class potentDirtBlock extends Block {
+	
+	public potentDirtBlock() {
+		
+		super(Material.wood);
+	}
+
+}

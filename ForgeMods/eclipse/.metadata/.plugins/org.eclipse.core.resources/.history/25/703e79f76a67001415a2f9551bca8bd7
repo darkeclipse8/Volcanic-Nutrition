@@ -1,0 +1,17 @@
+package blocks;
+
+import lib.Constants;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+
+public class potentDirtBlock extends Block {
+	
+	public potentDirtBlock() {
+		
+		super(Material.wood);
+		setBlockName(Constants.MODID + " " + Constants.NAME); 
+		setCreativeTab(CreativeTabs.tabBlock);
+	}
+
+}

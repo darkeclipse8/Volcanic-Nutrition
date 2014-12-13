@@ -1,0 +1,41 @@
+---- Minecraft Crash Report ----
+// But it works on my machine.
+
+Time: 12/10/14 9:50 PM
+Description: Exception in server tick loop
+
+net.minecraft.server.v1_7_R3.ExceptionWorldConflict: Failed to check session lock, aborting
+	at net.minecraft.server.v1_7_R3.WorldNBTStorage.checkSession(WorldNBTStorage.java:78)
+	at net.minecraft.server.v1_7_R3.World.G(World.java:2634)
+	at net.minecraft.server.v1_7_R3.WorldServer.a(WorldServer.java:790)
+	at net.minecraft.server.v1_7_R3.WorldServer.save(WorldServer.java:763)
+	at net.minecraft.server.v1_7_R3.MinecraftServer.saveChunks(MinecraftServer.java:369)
+	at net.minecraft.server.v1_7_R3.MinecraftServer.u(MinecraftServer.java:576)
+	at net.minecraft.server.v1_7_R3.MinecraftServer.run(MinecraftServer.java:469)
+	at net.minecraft.server.v1_7_R3.ThreadServerApplication.run(SourceFile:628)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.9
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.8.0_25, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 152674944 bytes (145 MB) / 281018368 bytes (268 MB) up to 954728448 bytes (910 MB)
+	JVM Flags: 0 total; 
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	CraftBukkit Information: 
+   Running: CraftBukkit version git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks (MC: 1.7.9) (Implementing API version 1.7.9-R0.2) true
+   Plugins: {}
+   Warnings: DEFAULT
+   Threads: { WAITING Reference Handler: [java.lang.Object.wait(Native Method), java.lang.Object.wait(Unknown Source), java.lang.ref.Reference$ReferenceHandler.run(Unknown Source)], RUNNABLE Attach Listener: [], RUNNABLE DestroyJavaVM: [], RUNNABLE Server thread: [java.lang.Thread.dumpThreads(Native Method), java.lang.Thread.getAllStackTraces(Unknown Source), org.bukkit.craftbukkit.v1_7_R3.CraftCrashReport.call(CraftCrashReport.java:28), net.minecraft.server.v1_7_R3.CrashReportSystemDetails.a(SourceFile:74), net.minecraft.server.v1_7_R3.CrashReport.h(CrashReport.java:45), net.minecraft.server.v1_7_R3.CrashReport.<init>(CrashReport.java:33), net.minecraft.server.v1_7_R3.MinecraftServer.run(MinecraftServer.java:486), net.minecraft.server.v1_7_R3.ThreadServerApplication.run(SourceFile:628)], TIMED_WAITING Server Infinisleeper: [java.lang.Thread.sleep(Native Method), net.minecraft.server.v1_7_R3.ThreadSleepForever.run(SourceFile:65)], TIMED_WAITING Snooper Timer: [java.lang.Object.wait(Native Method), java.util.TimerThread.mainLoop(Unknown Source), java.util.TimerThread.run(Unknown Source)], WAITING Finalizer: [java.lang.Object.wait(Native Method), java.lang.ref.ReferenceQueue.remove(Unknown Source), java.lang.ref.ReferenceQueue.remove(Unknown Source), java.lang.ref.Finalizer$FinalizerThread.run(Unknown Source)], WAITING Thread-5: [sun.misc.Unsafe.park(Native Method), java.util.concurrent.locks.LockSupport.park(Unknown Source), java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source), java.util.concurrent.LinkedBlockingQueue.take(Unknown Source), net.minecraft.util.com.mojang.util.QueueLogAppender.getNextLogEvent(QueueLogAppender.java:73), org.bukkit.craftbukkit.v1_7_R3.util.TerminalConsoleWriterThread.run(TerminalConsoleWriterThread.java:25), java.lang.Thread.run(Unknown Source)], RUNNABLE Signal Dispatcher: [], TIMED_WAITING File IO Thread: [java.lang.Thread.sleep(Native Method), net.minecraft.server.v1_7_R3.FileIOThread.b(SourceFile:44), net.minecraft.server.v1_7_R3.FileIOThread.run(SourceFile:23), java.lang.Thread.run(Unknown Source)], RUNNABLE Netty IO #0: [sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method), sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source), sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source), sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source), sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source), sun.nio.ch.SelectorImpl.select(Unknown Source), net.minecraft.util.io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:591), net.minecraft.util.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:301), net.minecraft.util.io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101), java.lang.Thread.run(Unknown Source)],}
+   Recent tasks from 101970-102000{}
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Player Count: 0 / 20; []
+	Is Modded: Definitely; Server brand changed to 'CraftBukkit'
+	Type: Dedicated Server (map_server.txt)

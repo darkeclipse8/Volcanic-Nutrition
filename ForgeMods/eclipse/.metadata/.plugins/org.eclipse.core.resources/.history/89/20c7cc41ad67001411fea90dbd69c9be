@@ -1,0 +1,7 @@
+package foods;
+
+import net.minecraft.item.ItemFood;
+
+public class PowerCarrot extends ItemFood {
+	private string name = "powercarrot";
+}

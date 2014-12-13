@@ -1,0 +1,10 @@
+package foods;
+
+import net.minecraft.item.ItemFood;
+
+public class powerMelon extends ItemFood {
+	
+	private String name = "powerMelon";
+	private static final int heal_amount = 4;
+
+}

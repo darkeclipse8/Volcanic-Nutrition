@@ -1,0 +1,10 @@
+package biome;
+
+import net.minecraft.world.biome.BiomeGenBase;
+
+public class BiomeGenCustomDirt extends BiomeGenBase 
+{
+	public BiomeGenCustomDirt(int id) {
+		super(id);
+	}
+}

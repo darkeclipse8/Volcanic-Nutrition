@@ -1,0 +1,8 @@
+package lib;
+
+public class Constants {
+	public static final String MODID = "volcanicnutrition";
+	public static final String name = "Volcanic Nutrition";
+	public static final String VERSIOn = "1.0";
+
+}

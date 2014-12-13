@@ -1,0 +1,10 @@
+package blocks;
+
+import net.minecraft.block.Block;
+
+public class potentDirtBlock extends Block {
+	
+	public potentDirtBlock() {
+	}
+
+}

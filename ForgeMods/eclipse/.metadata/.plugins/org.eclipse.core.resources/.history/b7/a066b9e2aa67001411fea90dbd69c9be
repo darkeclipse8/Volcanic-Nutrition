@@ -1,0 +1,13 @@
+package items;
+
+import net.minecraft.item.ItemFood;
+
+public class VolcanicFood extends Item 
+{
+	private String name = "power carrot";
+	
+	public VolcanicFood(int heal, float saturation, boolean wolfMeat) {
+		super(heal, saturation, wolfMeat);
+		
+	}
+}

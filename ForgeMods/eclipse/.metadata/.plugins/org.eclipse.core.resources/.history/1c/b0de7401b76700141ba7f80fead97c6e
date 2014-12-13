@@ -1,0 +1,13 @@
+package foods;
+
+import net.minecraft.item.ItemFood;
+
+public final class VolcanicFood {
+	
+	public static ItemFood powerCarrot;
+	
+	public static void init() {
+		powerCarrot = new powerCarrot(1.0f, false);
+	}
+	
+}

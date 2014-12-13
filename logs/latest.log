@@ -1,0 +1,102 @@
+[20:25:22] [Server thread/INFO]: Starting minecraft server version 1.7.9
+[20:25:22] [Server console handler/ERROR]: Exception handling console input
+java.io.IOException: The handle is invalid
+	at java.io.FileInputStream.readBytes(Native Method) ~[?:1.8.0_25]
+	at java.io.FileInputStream.read(Unknown Source) ~[?:1.8.0_25]
+	at java.io.BufferedInputStream.fill(Unknown Source) ~[?:1.8.0_25]
+	at java.io.BufferedInputStream.read(Unknown Source) ~[?:1.8.0_25]
+	at java.io.FilterInputStream.read(Unknown Source) ~[?:1.8.0_25]
+	at org.bukkit.craftbukkit.libs.jline.console.ConsoleReader$1.read(ConsoleReader.java:167) ~[craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at org.bukkit.craftbukkit.libs.jline.internal.InputStreamReader.read(InputStreamReader.java:267) ~[craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at org.bukkit.craftbukkit.libs.jline.internal.InputStreamReader.read(InputStreamReader.java:204) ~[craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at org.bukkit.craftbukkit.libs.jline.console.ConsoleReader.readCharacter(ConsoleReader.java:995) ~[craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at org.bukkit.craftbukkit.libs.jline.console.ConsoleReader.readLineSimple(ConsoleReader.java:1506) ~[craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at org.bukkit.craftbukkit.libs.jline.console.ConsoleReader.readLine(ConsoleReader.java:1153) ~[craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at org.bukkit.craftbukkit.libs.jline.console.ConsoleReader.readLine(ConsoleReader.java:1117) ~[craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at org.bukkit.craftbukkit.libs.jline.console.ConsoleReader.readLine(ConsoleReader.java:1105) ~[craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.ThreadCommandReader.run(ThreadCommandReader.java:34) [craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+[20:25:22] [Server thread/INFO]: Loading properties
+[20:25:22] [Server thread/WARN]: server.properties does not exist
+[20:25:22] [Server thread/INFO]: Generating new properties file
+[20:25:22] [Server thread/INFO]: Default game type: SURVIVAL
+[20:25:22] [Server thread/INFO]: Generating keypair
+[20:25:23] [Server thread/INFO]: Starting Minecraft server on *:25565
+[20:25:23] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks (MC: 1.7.9) (Implementing API version 1.7.9-R0.2)
+[20:25:23] [Server thread/WARN]: Failed to load user banlist: 
+java.io.FileNotFoundException: banned-players.json (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method) ~[?:1.8.0_25]
+	at java.io.FileInputStream.<init>(Unknown Source) ~[?:1.8.0_25]
+	at net.minecraft.util.com.google.common.io.Files.newReader(Files.java:86) ~[craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.JsonList.load(JsonList.java:147) ~[craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.DedicatedPlayerList.y(SourceFile:99) [craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.DedicatedPlayerList.<init>(SourceFile:25) [craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.DedicatedServer.init(DedicatedServer.java:126) [craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.MinecraftServer.run(MinecraftServer.java:436) [craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.ThreadServerApplication.run(SourceFile:628) [craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+[20:25:23] [Server thread/WARN]: Failed to load ip banlist: 
+java.io.FileNotFoundException: banned-ips.json (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method) ~[?:1.8.0_25]
+	at java.io.FileInputStream.<init>(Unknown Source) ~[?:1.8.0_25]
+	at net.minecraft.util.com.google.common.io.Files.newReader(Files.java:86) ~[craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.JsonList.load(JsonList.java:147) ~[craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.DedicatedPlayerList.x(SourceFile:91) [craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.DedicatedPlayerList.<init>(SourceFile:27) [craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.DedicatedServer.init(DedicatedServer.java:126) [craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.MinecraftServer.run(MinecraftServer.java:436) [craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.ThreadServerApplication.run(SourceFile:628) [craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+[20:25:23] [Server thread/WARN]: Failed to load operators list: 
+java.io.FileNotFoundException: ops.json (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method) ~[?:1.8.0_25]
+	at java.io.FileInputStream.<init>(Unknown Source) ~[?:1.8.0_25]
+	at net.minecraft.util.com.google.common.io.Files.newReader(Files.java:86) ~[craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.JsonList.load(JsonList.java:147) ~[craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.DedicatedPlayerList.z(SourceFile:107) [craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.DedicatedPlayerList.<init>(SourceFile:29) [craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.DedicatedServer.init(DedicatedServer.java:126) [craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.MinecraftServer.run(MinecraftServer.java:436) [craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.ThreadServerApplication.run(SourceFile:628) [craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+[20:25:23] [Server thread/WARN]: Failed to load white-list: 
+java.io.FileNotFoundException: whitelist.json (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method) ~[?:1.8.0_25]
+	at java.io.FileInputStream.<init>(Unknown Source) ~[?:1.8.0_25]
+	at net.minecraft.util.com.google.common.io.Files.newReader(Files.java:86) ~[craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.JsonList.load(JsonList.java:147) ~[craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.DedicatedPlayerList.B(SourceFile:123) [craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.DedicatedPlayerList.<init>(SourceFile:30) [craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.DedicatedServer.init(DedicatedServer.java:126) [craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.MinecraftServer.run(MinecraftServer.java:436) [craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.ThreadServerApplication.run(SourceFile:628) [craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+[20:25:23] [Server thread/INFO]: Preparing level "world"
+[20:25:24] [Server thread/INFO]: Preparing start region for level 0 (Seed: 612749308991203058)
+[20:25:24] [Thread-6/WARN]: Could not get information about this CraftBukkit version; perhaps you are running a custom one?: IOException
+[20:25:25] [Thread-6/WARN]: Could not get latest artifact information: IOException
+[20:25:25] [Server thread/INFO]: Preparing spawn area: 8%
+[20:25:26] [Server thread/INFO]: Preparing spawn area: 19%
+[20:25:27] [Server thread/INFO]: Preparing spawn area: 35%
+[20:25:28] [Server thread/INFO]: Preparing spawn area: 47%
+[20:25:29] [Server thread/INFO]: Preparing spawn area: 59%
+[20:25:30] [Server thread/INFO]: Preparing spawn area: 74%
+[20:25:31] [Server thread/INFO]: Preparing spawn area: 87%
+[20:25:32] [Server thread/INFO]: Preparing spawn area: 99%
+[20:25:32] [Server thread/INFO]: Preparing start region for level 1 (Seed: 612749308991203058)
+[20:25:33] [Server thread/INFO]: Preparing spawn area: 17%
+[20:25:34] [Server thread/INFO]: Preparing spawn area: 31%
+[20:25:35] [Server thread/INFO]: Preparing spawn area: 51%
+[20:25:36] [Server thread/INFO]: Preparing spawn area: 70%
+[20:25:37] [Server thread/INFO]: Preparing spawn area: 94%
+[20:25:38] [Server thread/INFO]: Preparing start region for level 2 (Seed: 612749308991203058)
+[20:25:39] [Server thread/INFO]: Preparing spawn area: 62%
+[20:25:39] [Server thread/INFO]: Done (15.618s)! For help, type "help" or "?"
+[20:35:41] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2203ms behind, skipping 44 tick(s)
+[20:40:42] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2681ms behind, skipping 53 tick(s)
+[21:50:40] [Server thread/ERROR]: Encountered an unexpected exception
+net.minecraft.server.v1_7_R3.ExceptionWorldConflict: Failed to check session lock, aborting
+	at net.minecraft.server.v1_7_R3.WorldNBTStorage.checkSession(WorldNBTStorage.java:78) ~[craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.World.G(World.java:2634) ~[craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.WorldServer.a(WorldServer.java:790) ~[craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.WorldServer.save(WorldServer.java:763) ~[craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.MinecraftServer.saveChunks(MinecraftServer.java:369) ~[craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.MinecraftServer.u(MinecraftServer.java:576) ~[craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.MinecraftServer.run(MinecraftServer.java:469) [craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+	at net.minecraft.server.v1_7_R3.ThreadServerApplication.run(SourceFile:628) [craftbukkit-1.7.9-R0.2.jar:git-Bukkit-1.7.9-R0.1-10-g8688bd4-b3092jnks]
+[21:50:42] [Server thread/ERROR]: This crash report has been saved to: C:\Users\Benji\Desktop\CS185C\Volcanic Nutrition Plugin\.\crash-reports\crash-2014-12-10_21.50.41-server.txt

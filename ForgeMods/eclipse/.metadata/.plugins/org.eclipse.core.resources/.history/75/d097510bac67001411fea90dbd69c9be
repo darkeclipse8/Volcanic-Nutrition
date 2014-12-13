@@ -1,0 +1,8 @@
+package foods;
+
+import net.minecraft.item.ItemFood;
+
+public class VolcanicFood {
+	public static Item power_carrot;
+	
+}

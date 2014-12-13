@@ -1,0 +1,23 @@
+package foods;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import lib.Constants;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemFood;
+import net.minecraft.item.ItemSeedFood;
+
+public class PowerCarrot extends ItemFood {
+	
+	private String name = "powercarrot";
+	private static final int heal_amount = 3;
+	
+	public PowerCarrot(float saturation, boolean wolfMeat)
+	{
+		super(heal_amount, saturation, wolfMeat);
+		setUnlocalizedName(Constants.MODID + "_" + name);
+		setTextureName(Constants.MODID + ":" + name);
+		setCreativeTab(CreativeTabs.tabFood);
+		GameRegistry.registerItem(this,name);
+	}
+	
+}

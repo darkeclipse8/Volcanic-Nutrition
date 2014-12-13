@@ -1,0 +1,15 @@
+package foods;
+
+import net.minecraft.item.ItemFood;
+
+public class PowerCarrot extends ItemFood {
+	
+	private String name = "powercarrot";
+	private final heal_amount = 2.5;
+	
+	public PowerCarrot(float saturation, boolean wolfMeat)
+	{
+		super(heal_amount, saturation, wolfMeat);
+	}
+	
+}

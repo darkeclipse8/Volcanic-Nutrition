@@ -1,0 +1,28 @@
+package biome;
+
+import net.minecraft.world.biome.BiomeGenBase;
+import net.minecraftforge.common.BiomeDictionary;
+import net.minecraftforge.common.BiomeDictionary.Type;
+import net.minecraftforge.common.BiomeManager;
+
+public class BiomeRegistry 
+{
+	public static void init()
+	{	
+		initializeBiome();
+		registerBiome();
+	}
+	
+	public static BiomeGenBase customDirtBiome;
+	
+	public static void initializeBiome()
+	{
+		customDirtBiome = new BiomeGenCustomDirt.setBiomeName("CustomDirt");
+	}
+	
+	public static void registerBiome()
+	{	
+		BiomeDictionary.registerBiomeType(customDirtBiome, Type.OCEAN);	
+		BiomeManager.addSpawnBiome(customDirtBiome);	
+	}
+}

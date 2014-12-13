@@ -1,0 +1,23 @@
+package blocks;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import lib.Constants;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+
+public class potentDirtBlock extends Block {
+	
+	String nameOfBlock = "potentDirtBlock";
+	String blockFile = "potentDirtBlock.png";
+	
+	public potentDirtBlock() {
+		super(Material.wood);
+		setBlockName(Constants.MODID + " " + nameOfBlock); 
+		setBlockTextureName(Constants.MODID + ":" + nameOfBlock);
+		setHardness(0.5F);
+		setCreativeTab(CreativeTabs.tabBlock);
+		GameRegistry.registerBlock(this, nameOfBlock);
+	}
+
+}

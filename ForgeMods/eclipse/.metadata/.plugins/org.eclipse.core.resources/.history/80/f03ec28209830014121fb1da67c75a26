@@ -1,0 +1,8 @@
+package biome;
+
+public class BiomeGenCustomDirt 
+{
+	public BiomeGenCustomDirt(int id) {
+		super(id);
+	}
+}

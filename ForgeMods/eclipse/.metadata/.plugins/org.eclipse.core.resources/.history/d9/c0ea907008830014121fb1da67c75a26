@@ -1,0 +1,16 @@
+package biome;
+
+public class BiomeRegistry 
+{
+	public static void init()
+	{	
+		initializeBiome();
+		registerBiome();
+	}
+	
+	public static void initializeBiome()
+	{}
+	
+	public static void registerBiome()
+	{}
+}

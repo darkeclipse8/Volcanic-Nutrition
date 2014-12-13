@@ -1,0 +1,16 @@
+[
+{
+  "modid": "volcanicnutrition",
+  "name": "Volcanic Nutrition",
+  "description": "CS185C Volcanic Nutrition Mod",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Ben Ngo"],
+  "credits": "Busairo(Ben Ngo) and students in CS185C",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

@@ -1,0 +1,9 @@
+package biome;
+
+public class BiomeRegistry 
+{
+	public static void init()
+	{	
+		
+	}
+}

@@ -1,0 +1,35 @@
+package com.busairo.volcanicnutrition;
+
+import biome.BiomeRegistry;
+import biome.WorldTypeCustomDirt;
+import blocks.ModBlocks;
+import lib.Constants;
+import net.minecraft.init.Blocks;
+import net.minecraft.world.WorldType;
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import foods.VolcanicFood;
+
+@Mod(modid = Constants.MODID, name = Constants.NAME , version = Constants.VERSION)
+
+public class VolcanicNutrition 
+{   	
+    @EventHandler
+    public void preinit(FMLInitializationEvent event) {
+    	ModBlocks.init();
+    	VolcanicFood.init();
+    	BiomeRegistry.init();
+    }
+    
+    @EventHandler
+    public void init(FMLInitializationEvent event) {
+    
+    }
+    
+    @EventHandler
+    public void postInit(FMLInitializationEvent event) {
+    	WorldType CUSTOM_DIRT = new WorldTypeCustomDirt(3, "Custom Dirt");
+    }   
+   
+}
