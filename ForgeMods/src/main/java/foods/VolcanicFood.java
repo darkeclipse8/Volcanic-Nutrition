@@ -1,6 +1,9 @@
 package foods;
 
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemFood;
+import net.minecraft.item.ItemStack;
 
 public final class VolcanicFood {
 	
@@ -12,5 +15,27 @@ public final class VolcanicFood {
 		powerCarrot = new powerCarrot(1.0f, false);
 		powerMelon = new powerMelon(1.0f, false);
 		powerPotatoe = new powerPotatoe(1.0f, false);
+		createRecipes();
+	}
+	
+	public static void createRecipes() {
+		
+		// Recipe for two carrots to make the power carrot
+		GameRegistry.addRecipe(new ItemStack(powerCarrot), new Object[] {
+			"AA",
+			'A', Items.carrot
+		});
+		
+		// Recipe for two melons to make the power carrot
+		GameRegistry.addRecipe(new ItemStack(powerMelon), new Object[] {
+			"AA",
+			'A', Items.melon
+		});
+		
+		// Recipe for two potatoes to make the power potatoe
+		GameRegistry.addRecipe(new ItemStack(powerPotatoe), new Object[] {
+			"AA",
+			'A', Items.potato
+		});
 	}
 }

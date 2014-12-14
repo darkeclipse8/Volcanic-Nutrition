@@ -1,14 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="blocks.ModBlocks"/>
-<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
 <fullyQualifiedTypeName name="net.minecraft.block.material.Material"/>
 <fullyQualifiedTypeName name="lib.Constants"/>
-<fullyQualifiedTypeName name="cpw.mods.fml.common.registry.GameRegistry"/>
 <fullyQualifiedTypeName name="net.minecraft.creativetab.CreativeTabs"/>
 <fullyQualifiedTypeName name="net.minecraft.item.ItemSeedFood"/>
 <fullyQualifiedTypeName name="foods.VolcanicFood"/>
 <fullyQualifiedTypeName name="org.bukkit.plugin.java.JavaPlugin"/>
 <fullyQualifiedTypeName name="org.bukkit.plugin.PluginManager"/>
 <fullyQualifiedTypeName name="org.bukkit.ChatColor"/>
+<fullyQualifiedTypeName name="net.minecraftforge.common.BiomeDictionary"/>
+<fullyQualifiedTypeName name="com.ibm.icu.text.DisplayContext.Type"/>
+<fullyQualifiedTypeName name="net.minecraftforge.common.BiomeDictionary.Type"/>
+<fullyQualifiedTypeName name="net.minecraftforge.common.BiomeManager"/>
+<fullyQualifiedTypeName name="net.minecraft.world.biome.BiomeGenBase"/>
+<fullyQualifiedTypeName name="net.minecraft.world.gen.layer.GenLayerBiome"/>
+<fullyQualifiedTypeName name="net.minecraft.world.gen.layer.GenLayerBiomeEdge"/>
+<fullyQualifiedTypeName name="net.minecraft.world.gen.layer.GenLayerZoom"/>
+<fullyQualifiedTypeName name="net.minecraft.world.gen.layer.GenLayer"/>
+<fullyQualifiedTypeName name="net.minecraft.world.gen.layer.IntCache"/>
+<fullyQualifiedTypeName name="biome.BiomeRegistry"/>
+<fullyQualifiedTypeName name="net.minecraft.world.WorldType"/>
+<fullyQualifiedTypeName name="biome.WorldTypeCustomDirt"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.monster.EntitySlime"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
+<fullyQualifiedTypeName name="blocks.ModBlocks"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.registry.GameRegistry"/>
+<fullyQualifiedTypeName name="net.minecraft.init.Blocks"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
+<fullyQualifiedTypeName name="net.minecraft.world.World"/>
+<fullyQualifiedTypeName name="net.minecraft.item.Item"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemStack"/>
+<fullyQualifiedTypeName name="net.minecraft.init.Items"/>
+<fullyQualifiedTypeName name="blocks.potentDirtBlock"/>
+<fullyQualifiedTypeName name="net.minecraft.util.IChatComponent"/>
+<fullyQualifiedTypeName name="net.minecraft.util.ChatComponentTranslation"/>
 </qualifiedTypeNameHistroy>
