@@ -1,0 +1,32 @@
+package blocks;
+
+import lib.Constants;
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.util.AxisAlignedBB;
+import net.minecraft.util.ChatComponentTranslation;
+import net.minecraft.world.World;
+import net.minecraftforge.common.EnumPlantType;
+import net.minecraftforge.common.IPlantable;
+import net.minecraft.entity.player.EntityPlayer;
+
+public class potentFarmlandDirtBlock extends Block 
+{
+	String nameOfBlock = "potentFarmlandDirtBlock";
+	String blockFile = "potentFarmlandDirtBlock.png";
+	
+	public potentFarmlandDirtBlock()
+	{
+		super(Material.ground);
+		setBlockName(Constants.MODID + " " + nameOfBlock); 
+		setBlockTextureName(Constants.MODID + ":" + nameOfBlock);
+		setHardness(0.5F);
+		setCreativeTab(CreativeTabs.tabBlock);
+		setStepSound(Block.soundTypeGravel);
+		GameRegistry.registerBlock(this, nameOfBlock);
+		System.out.println("Switched to farmland dirt block.");
+	}
+
+}

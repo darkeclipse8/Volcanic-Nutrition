@@ -1,0 +1,11 @@
+package blocks;
+
+import net.minecraft.block.material.Material;
+
+public class potentFarmlandDirtBlock {
+	
+	public potentFarmlandDirtBlock(){
+		super(Material.ground);
+	}
+
+}

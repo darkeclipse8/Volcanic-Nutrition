@@ -1,0 +1,9 @@
+package blocks;
+
+public class potentFarmlandDirtBlock {
+	
+	public potentFarmlandDirtBlock(){
+		super(Material.ground);
+	}
+
+}

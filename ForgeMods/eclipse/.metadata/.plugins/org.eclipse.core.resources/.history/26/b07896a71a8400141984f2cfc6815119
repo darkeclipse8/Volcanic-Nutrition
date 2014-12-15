@@ -1,0 +1,17 @@
+package blocks;
+
+import lib.Constants;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class potentFarmlandDirtBlock extends Block {
+	
+	private String nameOfBlock = "potentFarmlandDirtBlock";
+	private String blockFile = "";
+	
+	public potentFarmlandDirtBlock(){
+		super(Material.ground);
+		setBlockName(Constants.MODID + " " + blockFile);
+	}
+
+}

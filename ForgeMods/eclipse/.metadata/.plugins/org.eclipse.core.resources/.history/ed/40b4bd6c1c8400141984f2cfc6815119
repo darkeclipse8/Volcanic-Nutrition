@@ -1,0 +1,5 @@
+tile.volcanicnutrition potentDirtBlock.name=Potent Dirt Block
+tile.volcanicnutrition potentFarmlandDirtBlock = Potent Farmland Dirt Block
+item.volcanicnutrition powerCarrot.name=Power Carrot
+item.volcanicnutrition powerMelon.name=Power Melon
+item.volcanicnutrition powerPotatoe.name=Power Potatoe

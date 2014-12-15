@@ -14,6 +14,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.util.IChatComponent;
 import net.minecraft.world.World;
+import net.minecraftforge.common.MinecraftForge;
 
 public class potentDirtBlock extends Block {
 	
@@ -29,7 +30,6 @@ public class potentDirtBlock extends Block {
 		setCreativeTab(CreativeTabs.tabBlock);
 		setStepSound(Block.soundTypeGravel);
 		GameRegistry.registerBlock(this, nameOfBlock);
-		
 	}
 	
 	 public void decreaseItemDamage(ItemStack stack, int damage, EntityPlayer player){
@@ -47,33 +47,30 @@ public class potentDirtBlock extends Block {
 		 }
 	   
 	   
+	 
 	    @Override
 	    public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitX, float hitY, float hitZ) {
+	      
 		  if(!world.isRemote){
 		   if(player.getCurrentEquippedItem() != null &&  player.getCurrentEquippedItem().getItem() == Items.iron_hoe){
-			    world.setBlock(x, y, z, this);
+			    world.setBlock(x, y, z, ModBlocks.potentFarmlandDirtBlock);
 			    decreaseItemDamage(player.getCurrentEquippedItem(), -1, player);
-			    player.addChatMessage(new ChatComponentTranslation("You may now plant vegetable seeds on the potent dirt block"));
 			    return true;
 		    }else if(player.getCurrentEquippedItem() != null && player.getCurrentEquippedItem().getItem() == Items.wooden_hoe){
-		    	world.setBlock(x, y, z, this);
+		    	world.setBlock(x, y, z, ModBlocks.potentFarmlandDirtBlock);
 			    decreaseItemDamage(player.getCurrentEquippedItem(), -1, player);
-			    player.addChatMessage(new ChatComponentTranslation("You may now plant vegetable seeds on the potent dirt block"));
 			 return true;
 		   }else if(player.getCurrentEquippedItem() != null && player.getCurrentEquippedItem().getItem() == Items.golden_hoe){
-			   world.setBlock(x, y, z, this);
+			   world.setBlock(x, y, z, ModBlocks.potentFarmlandDirtBlock);
 			   decreaseItemDamage(player.getCurrentEquippedItem(), -1, player);
-			   player.addChatMessage(new ChatComponentTranslation("You may now plant vegetable seeds on the potent dirt block"));
 			   return true;
 		   }else if(player.getCurrentEquippedItem() != null && player.getCurrentEquippedItem().getItem() == Items.diamond_hoe){
-			   world.setBlock(x, y, z, this);
+			   world.setBlock(x, y, z, ModBlocks.potentFarmlandDirtBlock);
 			   decreaseItemDamage(player.getCurrentEquippedItem(), -1, player);
-			   player.addChatMessage(new ChatComponentTranslation("You may now plant vegetable seeds on the potent dirt block"));
 			   return true;
 		   }else if(player.getCurrentEquippedItem() != null && player.getCurrentEquippedItem().getItem() == Items.stone_hoe){
-			   world.setBlock(x, y, z, this);
+			   world.setBlock(x, y, z, ModBlocks.potentFarmlandDirtBlock);
 			   decreaseItemDamage(player.getCurrentEquippedItem(), -1, player);
-			   player.addChatMessage(new ChatComponentTranslation("You may now plant vegetable seeds on the potent dirt block"));
 			   return true;
 		   }
 		   return false;
